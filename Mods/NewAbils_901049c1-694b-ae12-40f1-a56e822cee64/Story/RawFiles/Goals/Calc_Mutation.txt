@@ -1,0 +1,443 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "REGENERATION", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "CLEANSE_WOUNDS", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "FrostyShell", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "FORTIFIED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "CRIPPLED", 6.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "WEAK", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "CLEAR_MINDED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "BLESSED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "CURSED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "CHILLED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "WARM", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "SHOCKED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "WET", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "FAVOURABLE_WIND", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "DRUNK", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "DISEASED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "RESTED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "MARKED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "BLIND", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "DISARMED", 12.0, 0, _Caster);
+ApplyStatus(_Target, "FAKEDISARMED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "DAZED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "EVADING", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "MUTED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "DEAF", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "DEFLECTING", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "INVISIBLE", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "POISONED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "BURNING", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "BLEEDING", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "ACID", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "SUFFOCATING", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "DECAYING_TOUCH", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "HASTED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "ENRAGED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "ENCOURAGED", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "WIND_WALKER", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "BREATHING_BUBBLE", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "FARSIGHT", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "VAMPIRISM", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "ADRENALINE", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "HORNS", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "MEDUSA_HEAD", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "WINGS", 12.0, 0, _Caster);
+ApplyStatus(_Target, "TRUEWINGS", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "SPIDER_LEGS", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "FROST_AURA", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "MEND_METAL", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "VENOM_COATING", 12.0, 0, _Caster);
+
+IF 
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_UncontrolledMutation", _SkillType, _Element)
+AND
+Random (10, _out)
+AND
+_out == 1
+THEN
+ApplyStatus(_Target, "DEATH_RESIST", 6.0, 0, _Caster);
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

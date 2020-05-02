@@ -1,0 +1,121 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterMissedBy(_Defender, _Caster, _)
+THEN
+DB_Missed(_Caster, _Defender);
+
+
+IF 
+CharacterUsedSkill(_Caster,_Skill,_Type,_element)
+AND
+DB_Attacked((CHARACTERGUID) _Defender, (CHARACTERGUID) _Caster)
+THEN
+NOT DB_Attacked((CHARACTERGUID) _Defender, (CHARACTERGUID) _Caster);
+
+
+IF 
+CharacterUsedSkill(_Caster,_Skill,_Type,_element)
+AND
+DB_Missed(_Caster, _Defender)
+THEN
+NOT DB_Missed(_Caster, _Defender);
+
+IF 
+CharacterUsedSkill(_Caster,_Skill,_Type,_element)
+AND 
+DB_ExpandedAbils_ONHITSOURCE(_Caster, _Status, _Duration, _Force)
+THEN
+NOT DB_ExpandedAbils_ONHITSOURCE(_Caster, _Status, _Duration, _Force);
+TimerCancel("ONHIT");
+
+IF
+DB_ExpandedAbils_ONHITSOURCE(_Caster, _Status, _Duration, _Force)
+THEN
+TimerLaunch("ONHIT", 3000);
+
+IF
+TimerFinished("ONHIT")
+AND
+DB_ExpandedAbils_ONHITSOURCE(_Caster, _Status, _Duration, _Force)
+THEN
+NOT DB_ExpandedAbils_ONHITSOURCE(_Caster, _Status, _Duration, _Force);
+
+
+IF 
+ObjectTurnEnded(_Caster)
+AND
+DB_Attacked((CHARACTERGUID) _Defender, (CHARACTERGUID) _Caster)
+THEN
+NOT DB_Attacked((CHARACTERGUID) _Defender, (CHARACTERGUID) _Caster);
+
+IF 
+ObjectTurnEnded(_Caster)
+AND 
+DB_ExpandedAbils_ONHITSOURCE((CHARACTERGUID)_Caster, _Status, _Duration, _Force)
+THEN
+NOT DB_ExpandedAbils_ONHITSOURCE((CHARACTERGUID)_Caster, _Status, _Duration, _Force);
+
+PROC
+PROC_ONHIT_ApplyStatus((CHARACTERGUID) _Caster, (CHARACTERGUID) _Defender, (STRING) _Status, (REAL) _Duration, (INTEGER) _Force)
+AND
+CharacterHasTalent(_Caster, "Torturer", 0)
+THEN
+ApplyStatus(_Defender, _Status, _Duration, 0, _Caster);
+
+PROC
+PROC_ONHIT_ApplyStatus((CHARACTERGUID) _Caster,(CHARACTERGUID) _Defender, (STRING) _Status, (REAL) _Duration, (INTEGER) _Force)
+AND
+CharacterHasTalent(_Caster, "Torturer", 1)
+THEN
+ApplyStatus(_Defender, _Status, _Duration, _Force, _Caster);
+
+
+IF
+CharacterStatusApplied(_Defender, "HIT", (CHARACTERGUID) _Caster)
+//AttackedByObject( (CHARACTERGUID) _Defender, (CHARACTERGUID) _Caster, (CHARACTERGUID) _Caster, _, _Source)
+AND
+DB_ExpandedAbils_ONHITSOURCE((CHARACTERGUID) _Caster, _Status, _Duration, _Force)
+AND
+NOT DB_Missed(_Caster, _Defender)
+AND
+GetDistanceTo(_Caster, _Defender, _dist)
+AND
+_dist < 20.0
+AND
+DB_Attacked((CHARACTERGUID) _Defender, (CHARACTERGUID) _Caster)
+THEN
+PROC_ONHIT_ApplyStatus(_Caster, _Defender, _Status, _Duration, _Force);
+
+
+
+IF
+CharacterStatusApplied(_Defender, "HIT", (CHARACTERGUID) _Caster)
+AND
+DB_ExpandedAbils_ONHITSOURCE((CHARACTERGUID) _Caster, _Status, _Duration, _Force)
+AND
+DB_Missed(_Caster, _Defender)
+THEN
+NOT DB_Missed(_Caster, _Defender);
+
+
+IF AttackedByObject((CHARACTERGUID) _Defender, (CHARACTERGUID) _Caster, (CHARACTERGUID) _Caster, _, _Source)
+AND 
+_Source != "StatusTick"
+AND
+_Source != "StatusEnter"
+AND
+DB_ExpandedAbils_ONHITSOURCE((CHARACTERGUID) _Caster, _Status, _Duration, _Force)
+THEN
+DB_Attacked((CHARACTERGUID) _Defender, (CHARACTERGUID) _Caster);
+
+
+
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

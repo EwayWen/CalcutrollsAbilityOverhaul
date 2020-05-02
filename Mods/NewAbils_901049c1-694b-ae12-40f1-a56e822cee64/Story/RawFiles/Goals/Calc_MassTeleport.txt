@@ -1,0 +1,63 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterUsedSkillAtPosition(_Caster, _X, _Y, _Z, "Target_MassTeleport", _, _)
+THEN
+DB_ExpandedAbils_BlackHole(_Caster,_X, _Y, _Z);
+
+IF
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_MassTeleport", _, _)
+AND
+GetPosition(_Target, _X, _Y, _Z)
+THEN
+DB_ExpandedAbils_BlackHole(_Caster,_X, _Y, _Z);
+
+IF 
+SkillCast(_Caster, "Target_MassTeleport", _ ,_)
+AND 
+DB_ExpandedAbils_BlackHole(_Caster,_X, _Y, _Z)
+THEN
+PlayEffectAtPosition("RS3_FX_Skills_Void_SwapGround_Impact_Root_02", _X, _Y, _Z);
+
+IF 
+SkillCast(_Caster, "Target_MassTeleport", _ ,_)
+AND 
+DB_ExpandedAbils_BlackHole(_Caster,_X, _Y, _Z)
+AND
+CombatGetIDForCharacter(_Caster, _ID)
+AND
+DB_CombatCharacters(_Char, _ID)
+AND
+CharacterIsEnemy(_Char, _Caster,1)
+AND
+GetDistanceToPosition(_Char, _X, _Y, _Z, _Dist)
+AND
+_Dist <= 9
+THEN
+ApplyStatus(_Char, "PULL", 6.0, 1, _Caster);
+
+
+
+IF
+CharacterStatusApplied(_Target, "PULL", _)
+AND
+DB_ExpandedAbils_BlackHole(_Caster,_X, _Y, _Z)
+THEN
+PlayAnimation(_Target, "knockdown_fall", "NULL");
+TeleportToPosition(_Target, _X, _Y, _Z, "NULL", 0, 1);
+PlayAnimation(_Target, "knockdown_getup", "NULL");
+
+
+IF
+ObjectTurnEnded( (CHARACTERGUID)_Caster)
+AND
+DB_ExpandedAbils_BlackHole(_Caster,_X, _Y, _Z)
+THEN
+NOT DB_ExpandedAbils_BlackHole(_Caster,_X, _Y, _Z);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

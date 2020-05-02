@@ -1,0 +1,10 @@
+new entry "FULLRESTORE"
+type "StatusData"
+data "StatusType" "HEAL"
+data "ForGameMaster" "No"
+data "InitiateCombat" "No"
+data "BringIntoCombat" "Yes"
+data "HealStat" "All"
+data "HealType" "Percentage"
+data "HealValue" "100"
+

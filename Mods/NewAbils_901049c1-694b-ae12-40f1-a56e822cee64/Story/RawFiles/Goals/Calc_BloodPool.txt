@@ -1,0 +1,44 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterUsedSkillAtPosition(_Caster, _X, _Y, _Z, "Target_BloodPool", _, _)
+AND
+GetPosition(_Caster, _oldX, _oldY, _oldZ)
+THEN
+TimerLaunch("Calc_BloodPoolTP", 1250);
+TimerLaunch("Calc_BloodPoolAnim", 100);
+DB_Calc_BloodPoolTP(_Caster, _X, _Y, _Z);
+DB_Calc_BloodPoolAnim(_oldX, _oldY, _oldZ, _X, _Y, _Z);
+
+
+IF
+TimerFinished("Calc_BloodPoolTP")
+AND
+DB_Calc_BloodPoolTP(_Caster, _X, _Y, _Z)
+THEN
+TeleportToPosition(_Caster, _X, _Y, _Z, "", 0, 1);
+NOT DB_Calc_BloodPoolTP(_caster, _X, _Y, _Z);
+
+IF
+TimerFinished("Calc_BloodPoolAnim")
+AND
+DB_Calc_BloodPoolAnim(_oldX, _oldY, _oldZ, _X, _Y, _Z)
+THEN
+TimerLaunch("Calc_BloodPoolAnim2", 650);
+PlayEffectAtPosition("RS3_FX_Skills_Voodoo_BloodPool_cast_ground_02", _oldX, _oldY, _oldZ);
+
+IF
+TimerFinished("Calc_BloodPoolAnim2")
+AND
+DB_Calc_BloodPoolAnim(_oldX, _oldY, _oldZ, _X, _Y, _Z)
+THEN
+NOT DB_Calc_BloodPoolAnim(_oldX, _oldY, _oldZ, _X, _Y, _Z);
+PlayEffectAtPosition("RS3_FX_Skills_Voodoo_BloodPool_cast_Root_02", _oldX, _oldY, _oldZ);
+PlayEffectAtPosition("RS3_FX_Skills_Voodoo_BloodPool_cast_Root_02", _X, _Y, _Z);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

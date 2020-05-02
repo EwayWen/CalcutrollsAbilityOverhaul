@@ -1,0 +1,11 @@
+new entry "WINGS"
+type "StatusData"
+data "StatusType" "FLOATING"
+data "ForGameMaster" "Yes"
+data "InitiateCombat" "No"
+data "DisplayName" "WINGS_DisplayName"
+data "DisplayNameRef" "Wings"
+data "Description" "WINGS_Description"
+data "DescriptionRef" "Character has wings and floats above the ground."
+data "OnlyWhileMoving" "Yes"
+

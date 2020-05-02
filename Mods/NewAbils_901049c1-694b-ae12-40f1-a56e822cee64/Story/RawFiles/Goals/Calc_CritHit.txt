@@ -1,0 +1,18 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_DaggersDrawn", _, _)
+THEN
+ApplyStatus(_Caster, "CRIT", 6.0, 0, _Caster);
+
+IF
+SkillCast(_Caster, "Target_DaggersDrawn", _, _)
+THEN
+RemoveStatus(_Caster, "CRIT");
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

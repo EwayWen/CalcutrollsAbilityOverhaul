@@ -1,0 +1,5 @@
+levelup 5
+addSkill Teleportation_ChainHook 
+maxout 
+nocooldowns 
+[HistoryLimit]30

@@ -1,0 +1,57 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+QRY
+QRY_OnHit_UsingOnHit((CHARACTERGUID)_Char)
+AND
+HasActiveStatus(_Char,"FIRE_BRAND",1)
+THEN
+DB_ExpandedAbils_ONHITSOURCE(_Char, "BURNING", 6.0, 1);
+
+QRY
+QRY_OnHit_UsingOnHit(_Char)
+AND
+HasActiveStatus(_Char,"FIRE_BRAND_AURA",1)
+THEN
+DB_ExpandedAbils_ONHITSOURCE(_Char, "BURNING", 6.0, 1);
+QRY
+QRY_OnHit_UsingOnHit((CHARACTERGUID)_Char)
+AND
+HasActiveStatus(_Char,"VENOM_COATING",1)
+THEN
+DB_ExpandedAbils_ONHITSOURCE(_Char, "POISONED", 6.0, 1);
+
+QRY
+QRY_OnHit_UsingOnHit((CHARACTERGUID)_Char)
+AND
+HasActiveStatus(_Char,"VENOM_AURA",1)
+THEN
+DB_ExpandedAbils_ONHITSOURCE(_Char, "POISONED", 6.0, 1);
+
+QRY
+QRY_OnHit_UsingOnHit((CHARACTERGUID)_Char)
+AND
+HasActiveStatus(_Char,"RENDINGSTRIKES",1)
+THEN
+DB_ExpandedAbils_ONHITSOURCE(_Char, "EXPOSURE1", 12.0, 1);
+
+QRY
+QRY_OnHit_UsingOnHit((CHARACTERGUID)_Char)
+AND
+HasActiveStatus(_Char,"SAPPING",1)
+THEN
+DB_ExpandedAbils_ONHITSOURCE(_Char, "SAPMAGIC", 6.0, 1);
+
+QRY
+QRY_OnHit_UsingOnHit((CHARACTERGUID)_Char)
+AND
+HasActiveStatus(_Char,"BLAZINGPANDEMONIUM",1)
+THEN
+DB_ExpandedAbils_ONHITSOURCE(_Char, "MINI_FLAMING_CRESCENDO", 6.0, 1);
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

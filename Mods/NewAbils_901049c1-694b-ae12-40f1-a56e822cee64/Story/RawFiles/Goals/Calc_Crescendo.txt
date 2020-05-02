@@ -1,0 +1,30 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterStatusRemoved(_Character, "FLAMING_CRESCENDO", _Causee)
+AND
+DB_ExpandedAbils_ONHITSOURCE(_Caster, _Status, _Duration, _Force)
+THEN
+NOT DB_ExpandedAbils_ONHITSOURCE(_Caster, _Status, _Duration, _Force);
+
+IF
+CharacterStatusRemoved(_Character, "MINI_FLAMING_CRESCENDO", _Causee)
+AND
+DB_ExpandedAbils_ONHITSOURCE(_Caster, _Status, _Duration, _Force)
+THEN
+NOT DB_ExpandedAbils_ONHITSOURCE(_Caster, _Status, _Duration, _Force);
+
+
+//IF
+//CharacterStatusRemoved(_Character, "FLAMING_CRESCENDO", _Causee)
+//THEN
+//CreateSurface(_Character, "SurfaceFire", 3.0, 12.0);
+//TransformSurface(_Character, "Ignite", "Ground", 3.0, 12.0, NULL_00000000-0000-0000-0000-000000000000);
+//ApplyStatus(_Character, "BURNING", 6.0, 0, NULL_00000000-0000-0000-0000-000000000000);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

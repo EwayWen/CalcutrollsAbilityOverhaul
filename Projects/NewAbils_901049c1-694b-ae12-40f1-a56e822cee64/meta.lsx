@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="1" build="0" />
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="Module" value="901049c1-694b-ae12-40f1-a56e822cee64" type="23" />
+            <attribute id="Name" value="NewAbils_901049c1-694b-ae12-40f1-a56e822cee64" type="23" />
+            <attribute id="Type" value="Add-on" type="23" />
+            <attribute id="UUID" value="22fac6c1-0bb8-69cc-9785-320e851ad37a" type="23" />
+        </node>
+    </region>
+</save>

@@ -1,0 +1,53 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterStatusApplied(_Caster, "WRAITH", _)
+THEN
+ApplyStatus(_Caster, "DISARMED", 6.0, 1, _Caster);
+ApplyStatus(_Caster, "INVISMUTED", 6.0, 1, _Caster);
+
+IF
+ObjectEnteredCombat((CHARACTERGUID)_Character, _)
+AND
+HasActiveStatus(_Character, "WINGS", 1)
+AND
+HasActiveStatus(_Character, "TRUEWINGS", 0)
+AND
+HasActiveStatus(_Character, "WRAITH", 0)
+THEN
+ApplyStatus(_Character, "TRUEWINGS", -1.0, 0, _Character);
+
+
+IF
+CharacterStatusRemoved(_Caster, "WRAITH", _)
+THEN
+RemoveStatus(_Caster, "DISARMED");
+RemoveStatus(_Caster, "INVISMUTED");
+
+IF
+ObjectTurnStarted((CHARACTERGUID)_Caster)
+AND
+HasActiveStatus(_Caster, "WRAITH", 1)
+THEN
+RemoveStatus(_Caster, "WRAITH");
+RemoveStatus(_Caster, "WINGS");
+
+IF
+CharacterStatusApplied(_Target, "DISARMED", _Caster)
+AND
+GetStatusTurns(_Target, "DISARMED", _Turns)
+AND
+HasActiveStatus(_Target, "WRAITH", 0)
+AND
+IntegerProduct( _Turns, 6, _out)
+AND
+Real(_out, _rout)
+THEN
+ApplyStatus(_Target, "FAKEDISARMED", (REAL) _rout, 0, _Caster);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

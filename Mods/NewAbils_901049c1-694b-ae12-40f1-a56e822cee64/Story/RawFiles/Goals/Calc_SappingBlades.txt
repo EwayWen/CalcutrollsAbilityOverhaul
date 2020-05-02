@@ -1,0 +1,28 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF 
+CharacterStatusApplied(_char, "SAPMAGIC", _Caster)
+AND
+DB_ExpandedAbils_ONHITSOURCE((CHARACTERGUID) _Caster, "SAPMAGIC", _Duration, _Force)
+AND
+CharacterGetMagicArmorPercentage(_Caster, _percentageMagic)
+AND
+RealSum(_percentageMagic, 10.0, _OUT1M)
+AND
+RealMin(_OUT1M, 100.0,  _OUT2M)
+AND
+CharacterGetArmorPercentage(_Caster, _percentagePhys)
+AND
+RealSum(_percentagePhys, 10.0, _OUT1P)
+AND
+RealMin(_OUT1P, 100.0,  _OUT2P)
+THEN
+CharacterSetMagicArmorPercentage(_Caster, _OUT2M);
+CharacterSetArmorPercentage(_Caster, _OUT2P);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

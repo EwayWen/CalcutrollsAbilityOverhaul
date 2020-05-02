@@ -1,0 +1,14 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterUsedSkillOnTarget(_Caster, _Target, "Teleportation_ChainHook", _, _)
+THEN
+PlayBeamEffect(_Caster,_Target, "RS3_FX_Skills_Warrior_Prepare_Warrior_Chain_beam01", "Dummy_R_HandFX", "Dummy_BodyFX");
+ApplyStatus(_Target, "CRIPPLED",6.0,0,_Caster);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

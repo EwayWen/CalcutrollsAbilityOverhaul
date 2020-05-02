@@ -1,0 +1,32 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterStatusApplied(_Caster, "WARRIOR", _Cause)
+AND
+CharacterGetAttribute(_Caster, "Intelligence", _INT)
+AND
+IntegerSubtract(_INT, 6, _TEMP1)
+AND
+IntegerDivide(_TEMP1, 2, _TEMP2)
+THEN
+DB_ExpandedAbils_Temp_StrBuff(_Caster, _TEMP2);
+CharacterAddAttribute(_Caster, "Strength", _TEMP2);
+CharacterAddAttribute(_Caster, "Finesse", _TEMP2);
+CharacterRemoveAttribute(_Caster, "Intelligence", _TEMP2);
+
+IF
+CharacterStatusRemoved(_Caster, "WARRIOR", _Causee)
+AND 
+DB_ExpandedAbils_Temp_StrBuff(_Caster, _TEMP2)
+THEN
+CharacterAddAttribute(_Caster, "Intelligence", _TEMP2);
+CharacterRemoveAttribute(_Caster, "Strength", _TEMP2);
+CharacterRemoveAttribute(_Caster, "Finesse", _TEMP2);
+NOT DB_ExpandedAbils_Temp_StrBuff(_Caster, _TEMP2);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

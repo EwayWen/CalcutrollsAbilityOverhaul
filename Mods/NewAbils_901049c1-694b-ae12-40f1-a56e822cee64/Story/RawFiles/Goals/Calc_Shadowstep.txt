@@ -1,0 +1,43 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterUsedSkill(_Caster, "Jump_Shadowstep", _, _)
+AND
+GetPosition(_Caster, _X, _Y, _Z)
+THEN
+DB_ExpandedAbils_Temp_Position(_Caster, _X, _Y, _Z);
+
+
+IF
+DB_ExpandedAbils_Temp_Position(_Caster, _X, _Y, _Z)
+AND
+PlayScaledLoopEffectAtPosition("RS3_FX_GP_Projectiles_Grenade_Smoke_01", 1.0, _X, _Y, _Z, _smoke)
+THEN
+DB_EFFECT(_smoke);
+
+IF
+ObjectTurnEnded( (CHARACTERGUID)_Caster)
+AND
+DB_ExpandedAbils_Temp_Position(_Caster, _X, _Y, _Z)
+AND
+DB_EFFECT(_smoke)
+THEN
+NOT DB_ExpandedAbils_Temp_Position(_Caster,  _X, _Y, _Z);
+NOT DB_EFFECT(_smoke);
+StopLoopEffect(_smoke);
+PlayAnimation(_Caster, "skill_jump_flight_start", "NULL");
+TeleportToPosition(_Caster,  _X, _Y, _Z, "NULL", 0);
+PlayAnimation(_Caster, "skill_jump_flight_land", "NULL");
+//PlayAnimation(_Caster, "skill_jump_flight_end", "NULL");
+RemoveStatus(_Caster, "SHADOWSTEP");
+
+
+
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

@@ -1,0 +1,13 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+Calc_CompleteParentGoal();
+KBSECTION
+PROC
+Calc_CompleteParentGoal()
+THEN
+GoalCompleted;
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"

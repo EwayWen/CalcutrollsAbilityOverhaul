@@ -1,0 +1,33 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+GameStarted(_,_)
+AND
+DB_IsPlayer(_Player)
+AND
+ObjectGetFlag(_Player,"FreeSavageSortilege",0) 
+AND
+CharacterHasTalent(_Player, "ViolentMagic", 1)
+THEN
+CharacterAddTalentPoint(_Player, 1);
+ObjectSetFlag(_Player,"FreeSavageSortilege");
+
+IF
+GameStarted(_,_)
+AND
+DB_IsPlayer(_Player)
+AND
+ObjectGetFlag(_Player,"FreeSavageSortilege",0) 
+AND
+CharacterHasTalent(_Player, "ViolentMagic",0)
+THEN
+CharacterAddTalent(_Player, "ViolentMagic");
+ObjectSetFlag(_Player,"FreeSavageSortilege");
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

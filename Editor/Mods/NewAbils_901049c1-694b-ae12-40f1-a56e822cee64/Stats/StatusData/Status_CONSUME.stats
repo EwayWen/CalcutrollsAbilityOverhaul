@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="FORTRESS" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Impenetrable Fortress" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Reduced mobility and recieved damage.." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_ImpenetrableFortress" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="14" enumeration_type_name="FormatStringColor" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ImpenetrableFortress" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ImpenetrableFortress" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Fortified_01" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SUMMONBOOST" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Minion Cap Increased" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Your maxinum number of minions has increased by 1. (Max: 2)" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Hasted" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="30" enumeration_type_name="FormatStringColor" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_SummonBoost" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INF_POWER" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Power Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Summoning_PowerInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Power_01:Dummy_BodyFX" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Power" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_PowerInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Shout_IncarnateWhirlwind;Rush_IncarnateBatteringRam" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INF_SHADOW" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Shadow Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Summoning_ShadowInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Shadow_A_01:Dummy_BodyFX" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Shadow" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ShadowInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Shout_IncarnateChameleonSkin;Target_IncarnateCorruptedBlade" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INF_WARP" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Warp Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Summoning_WarpInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Warp_01:Dummy_BodyFX" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Warp" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_WarpInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Jump_IncarnateJump;Shout_IncarnateSwapPlaces" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INFT_FIRE" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Fire Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_FireInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Fire_A_01:Dummy_StatusFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="3" enumeration_type_name="MaterialType" />
+        <field name="Material" type="StringStatObjectFieldDefinition" value="0818161f-b295-40a1-96d1-2503d72b2396" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Fire" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ElementalInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Target_BurnMyEyesTotem" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INFT_WATER" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Water Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Water_WaterInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Water_A_01:Dummy_BodyFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="3" enumeration_type_name="MaterialType" />
+        <field name="Material" type="StringStatObjectFieldDefinition" value="bb9f1adc-f4c9-426b-ac6b-f550c02b4ad6" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Water" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ElementalInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Target_FrostyShellTotem" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INFT_POISON" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Poison Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Earth_PoisonInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Poison_A_01:Dummy_BodyFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="3" enumeration_type_name="MaterialType" />
+        <field name="Material" type="StringStatObjectFieldDefinition" value="9e68d1ce-bcbc-4b99-aeed-d5c6d9c28311" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Poison" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ElementalInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Target_VenomCoatingTotem" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INFT_ELECTRIC" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Electric Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Air_ElectricInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Electric_A_01:Dummy_BodyFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="3" enumeration_type_name="MaterialType" />
+        <field name="Material" type="StringStatObjectFieldDefinition" value="3425a484-bdfe-4a44-a04a-7ff984a4a457" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Electric" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ElementalInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Target_EvasiveManuverTotem" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INFT_BLOOD" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Blood Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_BloodInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Blood_A_01:Dummy_StatusFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="3" enumeration_type_name="MaterialType" />
+        <field name="Material" type="StringStatObjectFieldDefinition" value="b5a84a17-59d5-43c0-985e-358609be2e46" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Blood" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ElementalInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Target_DeathWishTotem" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INFT_OIL" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Oil Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Earth_OilInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Oil_A_01:Dummy_StatusFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="3" enumeration_type_name="MaterialType" />
+        <field name="Material" type="StringStatObjectFieldDefinition" value="f4038f51-a8b3-4a33-b8f8-1ad2745ad575" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Oil" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ElementalInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Target_FortifyTotem" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="HASTED" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Hasted" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is hasted." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Hasted" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="22" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Hasted_01,KeepRot:Dummy_BodyFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="34" enumeration_type_name="AttributeFlag" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Hasted" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Hasted" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INF_GIGA" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Giga Infusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Ranged_01;RS3_FX_Char_ElementalDevil_Power_01:Dummy_BodyFX;RS3_FX_Char_ElementalDevil_Shadow_A_01:Dummy_BodyFX;RS3_FX_Char_ElementalDevil_Warp_01:Dummy_BodyFX" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Giga" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Projectile_IncarnateRangedAttack;Shout_IncarnateWhirlwind;Rush_IncarnateBatteringRam;Shout_IncarnateChameleonSkin;Target_IncarnateCorruptedBlade;Jump_IncarnateJump;Shout_IncarnateSwapPlaces" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="BLOODCARAPACE" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Blood Carapace" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Maximum Physical and Magic Armor increased." />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="15" enumeration_type_name="FormatStringColor" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_BloodCarapace" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Bleeding_01" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_BloodCarapace" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="PREPARATION" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Prepared" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Gain additional action points next turn." />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Preparation" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Preparation" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="15" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Prepared_01" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="DEATHMARK" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Assassinated" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is dead." />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_DeathMark" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="15" enumeration_type_name="FormatStringColor" />
+        <field name="SavingThrow" type="EnumerationStatObjectFieldDefinition" value="33" enumeration_type_name="SavingThrow" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Rogue_MortalBlow" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SHADOWSTEP" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Shadowstep" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character will teleport back to original location." />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_SHADOWSTEP" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Shadowstep" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="15" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Weak_01" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="GUARDIAN_ANGEL_AURA" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Guardian Angel Aura" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is protecting nearby Allies" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Warrior_GuardianAngel" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_GuardianAngel_Root_01,KeepRot:Dummy_Root;RS3_FX_GP_Status_GuardianAngel_Aura_01,KeepRot:Dummy_BodyFX" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Guardian_Angel_Aura" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_GuardianAngel" />
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="AuraRadius" type="IntegerStatObjectFieldDefinition" value="8" />
+        <field name="AuraAllies" type="StringStatObjectFieldDefinition" value="GUARDIAN_ANGEL" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="NULL_RESISTANCE" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Nullified Resistance" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Source_NullifyResistance" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_NullResistanc_01,KeepRot:Dummy_BodyFX" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="SKILLBOOST_NullResistance" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="NullRes" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="INF_RANGED" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Ranged Infusion" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Summoning_RangedInfusion" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_ElementalDevil_Ranged_01" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Infusion_Ranged" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_RangedInfusion" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Projectile_IncarnateRangedAttack" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="CRIT" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_crit" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="PULL" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_pull" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Gravity Well" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is immobilized." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_MassTeleport" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="22" enumeration_type_name="FormatStringColor" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="WATER_VEIL" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Water Veil" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character gains increased elemental resistance" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_WaterVeil" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_WaterVeil" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_WaterVeil" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_WaterVeil" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SOURCE_SURGE" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Source Surge" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character gains increased damage, movement, and resistances." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_SourceSurge" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="25" enumeration_type_name="FormatStringColor" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_SourceSurge" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SourceSurge" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_SourceSurge_01" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="WARRIOR" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Perfect Warrior" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Increased strength, finesse and warfare. Reduced intelligence." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_PerfectWarrior" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="32" enumeration_type_name="FormatStringColor" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Warrior" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Warrior" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_DeathWish_01:Dummy_BodyFX" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="FIRE_BRAND" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Fire Brand" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_FireBrand" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Firebrand_Subject_Hand_01:Dummy_L_HandFX,Dummy_R_HandFX;RS3_FX_GP_Status_Firebrand_Subject_Weapon_01" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_FireBrand" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_FireBrand" />
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="TRUEWINGS" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Wings" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character has wings and floats above the ground" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Polymorph_Wings" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Floating" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Back" />
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Projectile_Flight" />
+        <field name="Items" type="StringStatObjectFieldDefinition" value="ARM_Wings" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="WRAITH" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Wraith Form" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character gains increased movement speed and terrain immunity, but cannot attack." />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Wraith" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Wraith" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Wraith" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="FAKEDISARMED" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Atrophy" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character cannot use weapons for attacks or skills." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Disarmed" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Disarmed_01:Dummy_L_HandFX;RS3_FX_GP_Status_Disarmed_01:Dummy_R_HandFX" />
+        <field name="SavingThrow" type="EnumerationStatObjectFieldDefinition" value="33" enumeration_type_name="SavingThrow" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Disarmed" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_FakeDisarmed" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="RENDINGSTRIKES" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Rending Strikes" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Weapon abilities apply a stackable elemental debuff on hit." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_RendingStrikes" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Rend" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_RendingStrikes:Dummy_R_HandFX;RS3_FX_GP_Status_RendingStrikes:Dummy_L_HandFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="EXPOSURE1" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Exposure I" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Slightly reduced elemental resistances." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Status_Exposed1" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Exposure1" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_NullResistanc_02,KeepRot:Dummy_BodyFX" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="EXPOSURE2" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Exposure II" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Slightly reduced elemental resistances." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Status_Exposed2" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Exposure2" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_NullResistanc_02,KeepRot:Dummy_BodyFX" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="EXPOSURE3" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Exposure III" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Reduced elemental resistances." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Status_Exposed3" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Exposure3" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_NullResistanc_02,KeepRot:Dummy_BodyFX" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="EXPOSURE4" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Exposure IV" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Reduced elemental resistances." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Status_Exposed4" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Exposure4" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_NullResistanc_02,KeepRot:Dummy_BodyFX" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="EXPOSURE5" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Exposure V" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Greatly reduced elemental resistances." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Status_Exposed5" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Exposure5" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Exposure" />
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_NullResistanc_01,KeepRot:Dummy_BodyFX" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SAPPING" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Sapping Blades" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character restores 8% of his armor per hit." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_SappingBlades" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="6" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_SappingBlades_Subject_Hand_01:Dummy_L_HandFX,Dummy_R_HandFX;RS3_FX_GP_Status_SappingBlades_Subject_Weapon_01" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_SappingBlades" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SappingBlades" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SAPMAGIC" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_SapMagic" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Sapmagic" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="BLAZINGPANDEMONIUM" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="BringIntoCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Blazing Pandemonium" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character applies flaming crescendo on hit." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_BlazingPandemonium" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="MaterialParameters" type="StringStatObjectFieldDefinition" value="CharacterHeight:Height" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_BlazingPandemonium" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_BlazingPandemonium_Subject_Hand_01:Dummy_L_HandFX,Dummy_R_HandFX;RS3_FX_GP_Status_Firebrand_Subject_Weapon_01" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="MINI_FLAMING_CRESCENDO" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Flaming Crescendo" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character will explode when this status runs out." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_FlamingCrescendo" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_FlamingCrescendo_01:Dummy_OverheadFX" />
+        <field name="LeaveAction" type="StringStatObjectFieldDefinition" value="Projectile_MiniFlamingCrescendo_Explosion" />
+        <field name="DieAction" type="StringStatObjectFieldDefinition" value="Projectile_MiniFlamingCrescendo_Explosion" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="DEATH_RESIST_AURA" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Death Resist Aura" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Nearby Allies resist death." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Decay_LivingOnTheEdge" />
+        <field name="AuraRadius" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="AuraAllies" type="StringStatObjectFieldDefinition" value="DEATH_RESIST" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

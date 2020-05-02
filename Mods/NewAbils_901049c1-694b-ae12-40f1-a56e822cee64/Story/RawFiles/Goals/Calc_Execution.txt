@@ -1,0 +1,50 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_Guillotine", _, _)
+THEN
+DB_GuillotineUsed(_Caster, _Target);
+CharacterAddActionPoints(_Caster, 2);
+
+IF
+CharacterKilledBy(_Target, _Caster, _)
+AND
+DB_Guillotine(_Caster, _Target)
+THEN
+NOT DB_Guillotine(_Caster, _Target);
+NOT DB_Guillotine2(_Caster, _Target);
+
+
+IF
+AttackedByObject((CHARACTERGUID) _Target, (CHARACTERGUID) _Caster, _, _, _)
+AND
+DB_Guillotine(_Caster, _Target)
+THEN
+NOT DB_Guillotine(_Caster, _Target);
+
+IF
+AttackedByObject((CHARACTERGUID) _Target, (CHARACTERGUID) _Caster, _, _, _)
+AND
+DB_GuillotineUsed(_Caster, _Target)
+THEN
+NOT DB_GuillotineUsed(_Caster, _Target);
+DB_Guillotine(_Caster, _Target);
+DB_Guillotine2(_Caster, _Target);
+TimerLaunch("guillotine", 1100);
+
+IF
+TimerFinished("guillotine")
+AND
+DB_Guillotine2(_Caster, _Target)
+AND
+CharacterIsDead(_Target, 0)
+THEN
+NOT DB_Guillotine2(_Caster, _Target);
+CharacterAddActionPoints(_Caster, -2);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

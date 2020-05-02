@@ -1,0 +1,163 @@
+
+EVENTS
+EVENT CharacterSetNecrosis
+VARS
+	CHARACTER:_Character
+	LIST<STATUS>:_RemoveList
+	STATUS:_Result
+ON 
+	FetchCharacterApplyStatusData(_Character, NECROSIS)
+ACTIONS	
+	Set(_Result,NECROSIS)
+	ListClear(_RemoveList)
+	IF "c1"
+		CharacterHasStatus(_Character, RESTED)
+	THEN
+		ListAdd(_RemoveList, RESTED)
+		Set(_Result,null)
+	ELIF "c1"
+		CharacterHasStatus(_Character, FORTIFIED)
+	THEN
+		ListAdd(_RemoveList, FORTIFIED)
+		Set(_Result,null)
+	ENDIF
+	RETURN(_RemoveList,_Result,null)
+	
+EVENT CharacterSetExposure
+VARS
+	CHARACTER:_Character
+	LIST<STATUS>:_RemoveList
+	STATUS:_Result
+	INT:_TURNS
+ON 
+	FetchCharacterApplyStatusData(_Character, EXPOSURE1)
+ACTIONS	
+	Set(_Result,EXPOSURE1)
+	Set(_TURNS, 2)
+	ListClear(_RemoveList)
+	IF "c1"
+		CharacterHasStatus(_Character, EXPOSURE1)
+	THEN
+		ListAdd(_RemoveList, EXPOSURE1)
+		Set(_Result,EXPOSURE2)
+	ELIF "c1"
+		CharacterHasStatus(_Character, EXPOSURE2)
+	THEN
+		ListAdd(_RemoveList, EXPOSURE2)
+		Set(_Result,EXPOSURE3)
+	ELIF "c1"
+		CharacterHasStatus(_Character, EXPOSURE3)
+	THEN
+		ListAdd(_RemoveList, EXPOSURE3)
+		Set(_Result,EXPOSURE4)
+	ELIF "c1"
+		CharacterHasStatus(_Character, EXPOSURE4)
+	THEN
+		ListAdd(_RemoveList, EXPOSURE4)
+		Set(_Result,EXPOSURE5)
+	ELIF "c1"
+		CharacterHasStatus(_Character, EXPOSURE5)
+	THEN
+		Set(_Result,EXPOSURE5)
+	ENDIF
+	RETURN(_RemoveList,_Result,_TURNS)
+	
+	
+EVENT MyCharacterSetRested 
+VARS
+	CHARACTER:_Character
+	LIST<STATUS>:_RemoveList
+	STATUS:_Result
+ON 
+	FetchCharacterApplyStatusData(_Character, RESTED)
+ACTIONS	
+	Set(_Result,RESTED)
+	ListClear(_RemoveList)
+	ListAdd(_RemoveList, MUTED)
+	ListAdd(_RemoveList, BLIND)
+	ListAdd(_RemoveList, CRIPPLED)
+	ListAdd(_RemoveList, KNOCKED_DOWN)
+	ListAdd(_RemoveList, BLEEDING)
+	ListAdd(_RemoveList, NECROSIS)
+	ListAdd(_RemoveList, PLAGUE)
+	ListAdd(_RemoveList, INFESTED)	
+	RETURN(_RemoveList,_Result,null)
+	
+	
+EVENT MyCharacterSetRegeneration 
+VARS
+	CHARACTER:_Character
+	LIST<STATUS>:_RemoveList
+	STATUS:_Result
+ON 
+	FetchCharacterApplyStatusData(_Character, REGENERATION)
+ACTIONS	
+	Set(_Result,REGENERATION)
+	ListClear(_RemoveList)
+	ListAdd(_RemoveList, ACID)
+	ListAdd(_RemoveList, POISONED)
+	ListAdd(_RemoveList, BLEEDING)
+	ListAdd(_RemoveList, NECROSIS)
+	ListAdd(_RemoveList, SUFFOCATING)
+	ListAdd(_RemoveList, BURNING)
+	ListAdd(_RemoveList, INFESTED)
+	RETURN(_RemoveList,_Result,null)
+	
+	
+EVENT MyCharacterSetFortified 
+VARS
+	CHARACTER:_Character
+	LIST<STATUS>:_RemoveList
+	STATUS:_Result
+ON 
+	FetchCharacterApplyStatusData(_Character, FORTIFIED)
+ACTIONS	
+	Set(_Result,FORTIFIED)
+	ListClear(_RemoveList)
+	ListAdd(_RemoveList, ACID)
+	ListAdd(_RemoveList, POISONED)
+	ListAdd(_RemoveList, BURNING)
+	ListAdd(_RemoveList, NECROSIS)
+	ListAdd(_RemoveList, BLEEDING)
+	ListAdd(_RemoveList, DISEASED)
+	ListAdd(_RemoveList, INFECTIOUS_DISEASED)	
+	ListAdd(_RemoveList, DECAYING_TOUCH)	
+	RETURN(_RemoveList,_Result,null)
+
+EVENT MyCharacterSetPetrified 
+VARS
+	CHARACTER:_Character
+	LIST<STATUS>:_RemoveList
+	STATUS:_Result
+ON 
+	FetchCharacterApplyStatusData(_Character, PETRIFIED)
+ACTIONS
+	Set(_Result,PETRIFIED)
+	ListClear(_RemoveList)
+	IF "c1"
+		CharacterHasStatus(_Character, MAGIC_SHELL)
+	THEN
+		ListClear(_RemoveList)
+		ListAdd(_RemoveList, MAGIC_SHELL)	
+		Set(_Result,null)
+	ELIF "c1"
+		CharacterHasStatus(_Character, BLESSED)
+	THEN
+		ListClear(_RemoveList)
+		ListAdd(_RemoveList, BLESSED)		
+		Set(_Result,null)
+	ENDIF
+	IF "c1"
+		IsEqual(_Result, PETRIFIED)
+	THEN
+		ListAdd(_RemoveList, STUNNED)	
+		ListAdd(_RemoveList, SHOCKED)
+		ListAdd(_RemoveList, BLEEDING)
+		ListAdd(_RemoveList, NECROSIS)
+		ListAdd(_RemoveList, CRIPPLED)
+		ListAdd(_RemoveList, BURNING)
+		ListAdd(_RemoveList, POISONED)
+		ListAdd(_RemoveList, INVISIBLE)
+		ListAdd(_RemoveList, SLEEPING)
+	ENDIF		
+	RETURN(_RemoveList,_Result,null)

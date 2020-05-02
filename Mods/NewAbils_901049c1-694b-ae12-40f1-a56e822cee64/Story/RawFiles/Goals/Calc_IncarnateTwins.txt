@@ -1,0 +1,20 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterUsedSkillAtPosition(_Caster, _X, _Y, _Z, "Summon_IncarnateTwins", _, _)
+THEN
+CharacterAddActionPoints(_Caster, 1);
+CharacterUseSkillAtPosition(_Caster, "Summon_IncarnateTwins2", _X, _Y, _Z, 1, 1);
+
+
+IF 
+SkillCast(_Caster, "Summon_IncarnateTwins2", _, _)
+THEN
+CharacterAddActionPoints(_Caster, -1);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"

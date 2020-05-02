@@ -1,0 +1,45 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_Lethality", _, _)
+AND
+HasActiveStatus(_Caster, "INVISIBLE", 1) 
+THEN
+//Store this information in a DB, so we can apply the status after the skill is cast
+DB_ExpandedAbils_ApplySkillStatus(_Caster, _Target, "Target_Lethality", "DEATHMARK", 1.0);
+RemoveStatus(_Caster, "INVISIBLE");
+
+
+IF
+CharacterUsedSkillOnTarget(_Caster, _Target, "Target_Lethality", _, _)
+AND
+HasActiveStatus(_Caster, "SNEAKING", 1) 
+THEN
+//Store this information in a DB, so we can apply the status after the skill is cast
+DB_ExpandedAbils_ApplySkillStatus(_Caster, _Target, "Target_Lethality", "DEATHMARK", 1.0);
+RemoveStatus(_Caster, "SNEAKING");
+
+//Fires when the skill reaches the "cast" key in the animation
+IF
+SkillCast(_Caster, "Target_Lethality", _, _)
+AND
+DB_ExpandedAbils_ApplySkillStatus(_Caster, _Target, _Skill, _Status, _Turns)
+THEN
+// Clear the DB entry with NOT
+NOT DB_ExpandedAbils_ApplySkillStatus(_Caster, _Target, _Skill, _Status, _Turns);
+ApplyStatus(_Target, _Status, _Turns, 0, _Caster);
+
+
+IF
+CharacterStatusApplied(_Caster, "DEATHMARK", _Cause)
+THEN
+ApplyDamage(_Caster, 9999999,"Piercing" );
+RemoveStatus(_Caster, "DEATHMARK");
+
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Calc_Expanded_Abils"
