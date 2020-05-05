@@ -681,5 +681,27 @@
         <field name="AuraAllies" type="StringStatObjectFieldDefinition" value="DEATH_RESIST" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="CON_DOWN_1" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Constitution Reduced" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character's constitution reduced by 1." />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ConDown1" />
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="CON_DOWN_3" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Constitution Reduced" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character's constitution reduced by 3." />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ConDown3" />
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

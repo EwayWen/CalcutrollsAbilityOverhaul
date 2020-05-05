@@ -1,3 +1,9 @@
+new entry "Stats_ConDown1"
+type "Potion"
+data "Act" "1"
+data "Act part" "0"
+data "Vitality" "-1"
+
 new entry "Stats_Corruption"
 type "Potion"
 data "Act" "1"
@@ -287,4 +293,10 @@ new entry "Stats_SapMagic"
 type "Potion"
 data "Act" "1"
 data "Act part" "0"
+
+new entry "Stats_ConDown3"
+type "Potion"
+data "Act" "1"
+data "Act part" "0"
+data "Vitality" "-3"
 
