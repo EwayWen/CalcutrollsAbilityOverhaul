@@ -3,6 +3,20 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="CON_DOWN_10" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Constitution Reduced" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character's constitution severely reduced." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_FlamingCrescendo" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_FlamingCrescendo_01:Dummy_OverheadFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ConDown10" />
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="FORTRESS" />
         <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
@@ -690,6 +704,9 @@
         <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character's constitution reduced by 1." />
         <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ConDown1" />
         <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_FlamingCrescendo" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_FlamingCrescendo_01:Dummy_OverheadFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -701,6 +718,22 @@
         <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character's constitution reduced by 3." />
         <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ConDown3" />
         <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_FlamingCrescendo" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_FlamingCrescendo_01:Dummy_OverheadFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="STAINED_CRIMSON" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Stained Crimson" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character's stats greatly increased." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_FlamingCrescendo" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_FlamingCrescendo_01:Dummy_OverheadFX" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_StainedCrimson" />
       </fields>
     </stat_object>
   </stat_objects>

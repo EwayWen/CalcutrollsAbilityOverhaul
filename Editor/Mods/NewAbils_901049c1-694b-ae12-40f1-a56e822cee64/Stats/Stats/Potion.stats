@@ -3,10 +3,22 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ConDown1" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Preparation" />
         <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
         <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
+        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="APRecovery" type="IntegerStatObjectFieldDefinition" value="3" />
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ConDown1" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="13" enumeration_type_name="ActPart" />
         <field name="Vitality" type="IntegerStatObjectFieldDefinition" value="-1" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="91" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -42,16 +54,6 @@
         <field name="Armor" type="IntegerStatObjectFieldDefinition" value="30" />
         <field name="Duration" type="IntegerStatObjectFieldDefinition" value="3" />
         <field name="MagicArmor" type="IntegerStatObjectFieldDefinition" value="30" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Preparation" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="4" />
-        <field name="APRecovery" type="IntegerStatObjectFieldDefinition" value="3" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -371,8 +373,28 @@
       <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ConDown3" />
         <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="13" enumeration_type_name="ActPart" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="71" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ConDown10" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
         <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="Vitality" type="IntegerStatObjectFieldDefinition" value="-3" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="Penalty PreciseQualifier" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_StainedCrimson" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="151" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="151" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="151" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="7;40;13" enumeration_type_name="AttributeFlags" />
       </fields>
     </stat_object>
   </stat_objects>
