@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <save>
     <header version="2" />
-    <version major="3" minor="6" revision="4" build="1" />
+    <version major="3" minor="6" revision="6" build="0" />
     <region id="Config">
         <node id="root">
             <children>
@@ -9,17 +9,17 @@
                     <children>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" value="Shared_DOS" type="30" />
-                            <attribute id="MD5" value="" type="23" />
+                            <attribute id="MD5" value="51f45a5233f4b8a45b8a8ab71eccbc30" type="23" />
                             <attribute id="Name" value="Shared_DOS" type="22" />
                             <attribute id="UUID" value="eedf7638-36ff-4f26-a50a-076b87d53ba0" type="22" />
                             <attribute id="Version" value="268435456" type="4" />
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" value="DivinityOrigins_1301db3d-1f54-4e98-9be5-5094030916e4" type="30" />
-                            <attribute id="MD5" value="" type="23" />
+                            <attribute id="MD5" value="73d13f95607b70c953cc32e56d62b7d7" type="23" />
                             <attribute id="Name" value="Divinity: Original Sin 2" type="22" />
                             <attribute id="UUID" value="1301db3d-1f54-4e98-9be5-5094030916e4" type="22" />
-                            <attribute id="Version" value="372251161" type="4" />
+                            <attribute id="Version" value="373234071" type="4" />
                         </node>
                     </children>
                 </node>
@@ -27,6 +27,8 @@
                     <attribute id="Author" value="Calcutroll" type="30" />
                     <attribute id="CharacterCreationLevelName" value="" type="22" />
                     <attribute id="Description" value="This mod rebalances a significant number of abilities and adds new ones. The new abilities focus on improving the archetypes of rogues, warriors, spellswords, tanks, and supports." type="30" />
+                    <attribute id="DescriptionName" value="" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+                    <attribute id="DisplayName" value="" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
                     <attribute id="Folder" value="NewAbils_901049c1-694b-ae12-40f1-a56e822cee64" type="30" />
                     <attribute id="GMTemplate" value="" type="22" />
                     <attribute id="LobbyLevelName" value="" type="22" />
@@ -48,6 +50,20 @@
                             <children>
                                 <node id="Script">
                                     <attribute id="UUID" value="ea8880f0-89ce-40e5-b460-cb3255264f0b" type="22" />
+                                    <children>
+                                        <node id="Parameters">
+                                            <children>
+                                                <node id="Parameter">
+                                                    <attribute id="MapKey" value="HardcoreOnly" type="22" />
+                                                    <attribute id="Type" value="1" type="4" />
+                                                    <attribute id="Value" value="0" type="23" />
+                                                </node>
+                                            </children>
+                                        </node>
+                                    </children>
+                                </node>
+                                <node id="Script">
+                                    <attribute id="UUID" value="3d0bc572-9c9d-4d42-a7b1-986912e9565c" type="22" />
                                     <children>
                                         <node id="Parameters">
                                             <children>

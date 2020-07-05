@@ -3909,6 +3909,8 @@
         <field_definition name="IgnoreSilence" display_name="IgnoreSilence" export_name="IgnoreSilence" type="Enumeration" enumeration_type_name="YesNo" />
 
         <field_definition name="CycleConditions" display_name="CycleConditions" export_name="CycleConditions" type="String" />
+		
+		<field_definition name="OverrideMinAP" display_name="OverrideMinAP" export_name="OverrideMinAP" type="Enumeration" enumeration_type_name="YesNo" />
 
       </field_definitions>
 

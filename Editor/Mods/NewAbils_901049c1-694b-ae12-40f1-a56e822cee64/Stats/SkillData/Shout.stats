@@ -186,7 +186,7 @@
         <field name="MemorizationRequirements" type="StringStatObjectFieldDefinition" value="WarriorLore 2" />
         <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Warrior_Enrage" />
         <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Enrage" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Target character becomes enraged, giving them guaranteed critical strikes and increased movement speed at the cost of decreased resistances and Dodge." />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="You become enraged, muting yourself and giving guaranteed critical strikes." />
         <field name="FXScale" type="IntegerStatObjectFieldDefinition" value="100" />
         <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_shout_01_start" />
         <field name="PrepareAnimationLoop" type="StringStatObjectFieldDefinition" value="skill_prepare_shout_01_loop" />
@@ -196,7 +196,8 @@
         <field name="CastEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Fire_Shout_Target_01" />
         <field name="Memory Cost" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
-        <field name="Requirement" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="SkillRequirement" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="Tag calc_2h_equipped" />
+        <field name="OverrideMinAP" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -460,6 +461,7 @@
         <field name="CanTargetCharacters" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
         <field name="CanTargetItems" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
         <field name="Requirement" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="SkillRequirement" />
+        <field name="OverrideMinAP" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -779,7 +781,7 @@
         <field name="MemorizationRequirements" type="StringStatObjectFieldDefinition" value="WaterSpecialist 1" />
         <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_SappingBlades" />
         <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Sapping Blades" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Your weapon attacks gain [1] and restore 10% of your armor per hit." />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Your weapon attacks gain [1] and restore 8% of your armor per hit." />
         <field name="StatsDescriptionParams" type="StringStatObjectFieldDefinition" value="Weapon:Status_SappingBlades:Damage" />
         <field name="FXScale" type="IntegerStatObjectFieldDefinition" value="100" />
         <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_voodoo_01_start" />
