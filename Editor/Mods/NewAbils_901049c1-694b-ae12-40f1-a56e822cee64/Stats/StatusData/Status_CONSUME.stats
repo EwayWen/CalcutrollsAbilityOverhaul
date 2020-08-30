@@ -736,5 +736,39 @@
         <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_StainedCrimson" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="PARRYING" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Parrying" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is immobile, but is evading attacks and projectiles targeted at or near this character are sent back where they came from." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_SpearDeflect" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Deflecting_01:Dummy_ShieldSkillFX;RS3_FX_GP_Status_Deflecting_Root_01,KeepRot" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="MaterialType" />
+        <field name="Material" type="StringStatObjectFieldDefinition" value="1e0f6cfb-7215-4237-bcc4-61c5af54eb5e" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Parrying" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Deflecting" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="BLOODLETTING" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Drained" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is drained of blood." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Bloodletting" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_FleshSacrifice_01:Dummy_L_HandFX" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Bloodletting" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Bloodletting" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

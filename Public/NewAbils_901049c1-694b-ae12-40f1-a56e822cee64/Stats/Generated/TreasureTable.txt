@@ -79,6 +79,11 @@ object category "I_SKILLBOOK_Necromancy_BloodCarapace",1,0,0,0,0,0,0,0
 object category "I_SKILLBOOK_Necromancy_BansheeCry",1,0,0,0,0,0,0,0
 object category "I_SKILLBOOK_Necromancy_BloodPool",1,0,0,0,0,0,0,0
 object category "I_SKILLBOOK_Necromancy_Wraith",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Necromancy_Bloodletting",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Necromancy_InfectiousBlood",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Necromancy_Liquify",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Necromancy_Exsanguinate",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Necromancy_MassBloodSucker",1,0,0,0,0,0,0,0
 new treasuretable "ST_SkillbookRanger"
 new subtable "1,1"
 object category "I_SKILLBOOK_Ranger_Ricochet",1,0,0,0,0,0,0,0
@@ -135,6 +140,11 @@ object category "I_SKILLBOOK_Warrior_Overpower",1,0,0,0,0,0,0,0
 object category "I_SKILLBOOK_Warrior_ChainGrab",1,0,0,0,0,0,0,0
 object category "I_SKILLBOOK_Warrior_Guillotine",1,0,0,0,0,0,0,0
 object category "I_SKILLBOOK_Warrior_RendingStrikes",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Warrior_SpearVault",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Warrior_SpearThrow",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Warrior_ParryingStance",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Warrior_SpearCharge",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Warrior_Thrust",1,0,0,0,0,0,0,0
 new treasuretable "ST_SkillbookWater"
 new subtable "1,1"
 object category "I_SKILLBOOK_Water_Rain",1,0,0,0,0,0,0,0
@@ -175,6 +185,7 @@ object category "I_SKILLBOOK_Polymorph_StripResistance",1,0,0,0,0,0,0,0
 object category "I_SKILLBOOK_Polymorph_Equalize",1,0,0,0,0,0,0,0
 object category "I_SKILLBOOK_Polymorph_Apotheosis",1,0,0,0,0,0,0,0
 object category "I_SKILLBOOK_Polymorph_Mutation",1,0,0,0,0,0,0,0
+object category "I_SKILLBOOK_Polymorph_Transfusion",1,0,0,0,0,0,0,0
 new treasuretable "ST_SkillbookSummoning"
 new subtable "1,1"
 object category "I_SKILLBOOK_Summoning_Incarnate",1,0,0,0,0,0,0,0
@@ -396,6 +407,16 @@ new subtable "1,1"
 object category "I_SKILLBOOK_Necromancy_BloodPool",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_SKILLBOOK_Necromancy_Wraith",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Necromancy_Bloodletting",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Necromancy_InfectiousBlood",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Necromancy_Liquify",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Necromancy_Exsanguinate",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Necromancy_MassBloodSucker",1,0,0,0,0,0,0,0
 new treasuretable "ST_Skillbook_RangerTrainer"
 MinLevel "-30"
 MaxLevel "0"
@@ -505,6 +526,16 @@ new subtable "1,1"
 object category "I_SKILLBOOK_Warrior_Guillotine",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_SKILLBOOK_Warrior_RendingStrikes",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Warrior_SpearVault",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Warrior_SpearThrow",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Warrior_ParryingStance",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Warrior_SpearCharge",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Warrior_Thrust",1,0,0,0,0,0,0,0
 new treasuretable "ST_Skillbook_SummoningTrainer"
 MinLevel "-30"
 MaxLevel "0"
@@ -581,7 +612,10 @@ new subtable "1,1"
 object category "I_SKILLBOOK_Polymorph_Equalize",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_SKILLBOOK_Polymorph_Apotheosis",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_SKILLBOOK_Polymorph_Mutation",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Polymorph_Transfusion",1,0,0,0,0,0,0,0
 new treasuretable "FTJ_SkillbookWater"
 new subtable "1,1"
 object category "I_SKILLBOOK_Water_Rain",1,0,0,0,0,0,0,0
@@ -665,6 +699,12 @@ new subtable "1,1"
 object category "I_SKILLBOOK_Necromancy_DeathWish",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_SKILLBOOK_Necromancy_BloodCarapace",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Necromancy_Bloodletting",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Necromancy_Liquify",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Necromancy_Exsanguinate",1,0,0,0,0,0,0,0
 new treasuretable "FTJ_SkillbookRanger"
 new subtable "1,1"
 object category "I_SKILLBOOK_Ranger_Ricochet",1,0,0,0,0,0,0,0
@@ -716,6 +756,14 @@ new subtable "1,1"
 object category "I_SKILLBOOK_Warrior_Taunt",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_SKILLBOOK_Warrior_ChainGrab",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Warrior_SpearVault",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Warrior_ParryingStance",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Warrior_SpearCharge",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SKILLBOOK_Warrior_Thrust",1,0,0,0,0,0,0,0
 new treasuretable "FTJ_SkillbookPolymorph"
 new subtable "1,1"
 object category "I_SKILLBOOK_Polymorph_ChickenTouch",1,0,0,0,0,0,0,0
@@ -746,3 +794,17 @@ new subtable "1,1"
 object category "I_SKILLBOOK_Summoning_Harmony",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_SKILLBOOK_Summoning_Supercharge",1,0,0,0,0,0,0,0
+new treasuretable "ST_TwoHandedNormal"
+new subtable "1,1"
+object category "TwoHandedAxe",1,1,0,0,0,0,0,0
+object category "TwoHandedSword",1,1,0,0,0,0,0,0
+object category "TwoHandedMace",1,1,0,0,0,0,0,0
+new subtable "1,1"
+object category "Spear",1,1,0,0,0,0,0,0
+new treasuretable "ST_Trader_TwoHandedNormal"
+new subtable "1,1"
+object category "TwoHandedAxe",1,1,0,0,0,0,0,0
+object category "TwoHandedSword",1,1,0,0,0,0,0,0
+object category "TwoHandedMace",1,1,0,0,0,0,0,0
+new subtable "1,1"
+object category "Spear",1,1,0,0,0,0,0,0

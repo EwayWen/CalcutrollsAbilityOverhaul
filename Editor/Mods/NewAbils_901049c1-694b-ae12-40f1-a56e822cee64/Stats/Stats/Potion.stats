@@ -397,5 +397,33 @@
         <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="7;40;13" enumeration_type_name="AttributeFlags" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Parrying" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
+        <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="47" enumeration_type_name="AttributeFlags" />
+        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-100" />
+        <field name="DodgeBoost" type="IntegerStatObjectFieldDefinition" value="100" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Bloodletting" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="81" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="unknown" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_SteelSkin" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
+        <field name="Armor" type="IntegerStatObjectFieldDefinition" value="30" />
+        <field name="PhysicalResistance" type="IntegerStatObjectFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

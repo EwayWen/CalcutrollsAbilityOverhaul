@@ -26,7 +26,7 @@
         <field name="Value" type="IntegerStatObjectFieldDefinition" value="190" />
         <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancy" />
         <field name="Requirements" type="StringStatObjectFieldDefinition" value="Necromancy 2" />
-        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancyMid" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancyEarly" />
         <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
@@ -596,6 +596,182 @@
         <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="16" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Necromancy_Bloodletting" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="61628945-b3b8-43e0-a438-d0a09698e323" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="120" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancy" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="Necromancy 1" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancyStarter" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Necromancy_InfectiousBlood" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="7b46ccf5-82b3-4f68-9abb-b60447fdb601" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="13" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="750" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancySource" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="Necromancy 3" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancyMid" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="13" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Necromancy_Liquify" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="eb20e7a7-1802-4ecb-b652-52e752f3f6df" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="190" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancy" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="Necromancy 1" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancyEarly" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Necromancy_MassBloodSucker" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="ce35d975-ed9b-4b2c-9463-40127cd43011" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="13" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="750" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancySource" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="Necromancy 3" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancyMid" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="13" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Necromancy_Exsanguinate" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="978c4c55-4b4c-48d0-8312-d0bfecb642db" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="500" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancy" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="Necromancy 2" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookNecromancyMid" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Polymorph_Transfusion" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="5f8c2c57-6758-4073-afd2-39565c51bb78" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="13" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="750" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookPolymorph" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="Polymorph 3" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookPolymorphMid" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="13" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Warrior_SpearVault" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="1816c4cb-77e3-4363-bd5c-e9816ef13e55" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="120" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarrior" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="WarriorLore 1" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarriorStarter" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Warrior_SpearThrow" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="38b70a0f-bc06-42f0-b441-3355fb9b78fa" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="13" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="1000" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarriorSource" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="WarriorLore 3" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarriorMid" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="13" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Warrior_ParryingStance" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="a149f2d8-c625-487d-bc33-a41ed76334f3" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="190" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarrior" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="WarriorLore 2" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarriorEarly" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Warrior_SpearCharge" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="c5deedf6-5f0d-4a12-b7a9-8a05e94fd48e" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="120" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarrior" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="WarriorLore 1" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarriorStarter" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="SKILLBOOK_Warrior_Thrust" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Skillbooks" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="f9850d7c-c8fc-4388-a08c-1aef42cfcef1" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="14" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="190" />
+        <field name="ComboCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarrior" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="WarriorLore 2" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="SkillbookWarriorEarly" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="4" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -35,6 +35,7 @@
         <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="PushDistance" type="IntegerStatObjectFieldDefinition" value="16" />
         <field name="CycleConditions" type="StringStatObjectFieldDefinition" value="Enemy" />
+        <field name="TargetConditions" type="StringStatObjectFieldDefinition" value="!Dead;!Ally" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -171,7 +172,7 @@
         <field name="Damage Multiplier" type="IntegerStatObjectFieldDefinition" value="150" />
         <field name="Damage Range" type="IntegerStatObjectFieldDefinition" value="10" />
         <field name="DamageType" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="Damage Type" />
-        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="TryKill,100,1,FROZEN,10;FROZEN,100,1;" />
+        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="TryKill,100,1,FROZEN,50;FROZEN,100,1;" />
         <field name="Range" type="IntegerStatObjectFieldDefinition" value="8" />
         <field name="Angle" type="IntegerStatObjectFieldDefinition" value="45" />
         <field name="DeathType" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="Death Type" />
@@ -183,8 +184,8 @@
         <field name="UseWeaponProperties" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="CanTargetCharacters" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Water_Shatter" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="|Deep Freeze|" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="|Characters in the cone that are Frozen and below 50% Vitality shatter and instantly die. Otherwise they receive [1] damage and get Frozen.|" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Deep Freeze" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Characters in the cone that are Frozen and below 50% Vitality shatter and instantly die. Otherwise they receive [1] damage and get Frozen." />
         <field name="StatsDescriptionParams" type="StringStatObjectFieldDefinition" value="Damage" />
         <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_air_01_start" />
         <field name="PrepareAnimationLoop" type="StringStatObjectFieldDefinition" value="skill_prepare_air_01_loop" />
@@ -197,29 +198,6 @@
         <field name="MemorizationRequirements" type="StringStatObjectFieldDefinition" value="WaterSpecialist 3" />
         <field name="BackStart" type="IntegerStatObjectFieldDefinition" value="8" />
         <field name="CycleConditions" type="StringStatObjectFieldDefinition" value="Enemy" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="RunThrough" />
-        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="GroundSmash" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="Ability" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="SkillAbility" />
-        <field name="Tier" type="EnumerationStatObjectFieldDefinition" value="3" enumeration_type_name="SkillTier" />
-        <field name="ActionPoints" type="IntegerStatObjectFieldDefinition" value="0" />
-        <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="0" />
-        <field name="Damage Multiplier" type="IntegerStatObjectFieldDefinition" value="100" />
-        <field name="Damage Range" type="IntegerStatObjectFieldDefinition" value="8" />
-        <field name="DamageType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="Damage Type" />
-        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="SELF:" />
-        <field name="Range" type="IntegerStatObjectFieldDefinition" value="8" />
-        <field name="Angle" type="IntegerStatObjectFieldDefinition" value="25" />
-        <field name="DeathType" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="Death Type" />
-        <field name="TargetConditions" type="StringStatObjectFieldDefinition" value="Character" />
-        <field name="UseWeaponDamage" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="UseWeaponProperties" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="CanTargetCharacters" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="CanTargetItems" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -247,7 +225,7 @@
         <field name="CanTargetItems" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
         <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Warrior_GroundSmash" />
         <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Battle Stomp" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Smash your weapon into the ground, damaging all non-allied characters in a cone in front of you for [1] damage and knocking them down. Clears non-cursed surfaces and clouds." />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Smash your weapon into the ground, damaging all non-allied characters in a cone in front of you for [1] damage and knocking them down. Clears non-cursed surfaces and clouds. Requires a two-handed weapon." />
         <field name="StatsDescription" type="TranslatedStringStatObjectFieldDefinition" value="Cone angle: [2]&lt;br&gt;Length: [3]" />
         <field name="StatsDescriptionParams" type="StringStatObjectFieldDefinition" value="Damage;Angle;Range;" />
         <field name="FXScale" type="IntegerStatObjectFieldDefinition" value="100" />

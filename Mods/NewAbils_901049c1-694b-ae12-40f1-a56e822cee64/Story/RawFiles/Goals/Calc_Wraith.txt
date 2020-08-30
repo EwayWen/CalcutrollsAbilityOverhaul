@@ -47,6 +47,7 @@ AND
 Real(_out, _rout)
 THEN
 ApplyStatus(_Target, "FAKEDISARMED", (REAL) _rout, 0, _Caster);
+
 EXITSECTION
 
 ENDEXITSECTION
