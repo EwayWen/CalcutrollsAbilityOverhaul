@@ -104,6 +104,7 @@ data "Magic Cost" "0"
 data "Requirements" "!Immobile"
 data "MemorizationRequirements" "RogueLore 2"
 data "Stealth" "Yes"
+data "OverrideMinAP" "Yes"
 
 new entry "Jump_MyTacticalRetreat"
 type "SkillData"
@@ -138,4 +139,5 @@ data "Memory Cost" "1"
 data "Magic Cost" "0"
 data "Requirements" "!Immobile"
 data "MemorizationRequirements" "RangerLore 2"
+data "OverrideMinAP" "Yes"
 

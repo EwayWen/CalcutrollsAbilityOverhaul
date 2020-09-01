@@ -3135,6 +3135,8 @@
         <field_definition name="Stealth" display_name="Stealth" export_name="Stealth" type="Enumeration" enumeration_type_name="YesNo" />
 
         <field_definition name="CycleConditions" display_name="CycleConditions" export_name="CycleConditions" type="String" />
+		
+		<field_definition name="OverrideMinAP" display_name="OverrideMinAP" export_name="OverrideMinAP" type="Enumeration" enumeration_type_name="YesNo" />
 
       </field_definitions>
 
